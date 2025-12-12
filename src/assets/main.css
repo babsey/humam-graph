@@ -1,6 +1,5 @@
 @import './base.css';
 
-
 #app {
   max-width: 1600px;
   margin: 0 auto;
@@ -23,8 +22,6 @@ a,
 }
 
 @media (min-width: 1024px) {
-
-
   #app {
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;

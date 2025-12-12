@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import AreaSelect from "./components/AreaSelect.vue";
+import { RouterLink, RouterView } from 'vue-router'
+import AreaSelect from './components/AreaSelect.vue'
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import AreaSelect from "./components/AreaSelect.vue";
       <RouterLink to="/graph/force">Force Directed Graph</RouterLink>
       <RouterLink to="/graph/hierarchy">Hierarchy Edge Bundling</RouterLink>
     </nav>
-    
+
     <AreaSelect />
   </header>
 

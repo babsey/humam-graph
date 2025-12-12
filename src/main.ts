@@ -1,17 +1,17 @@
-import "./assets/main.css";
-import "vue-select/dist/vue-select.css";
+import './assets/main.css'
+import 'vue-select/dist/vue-select.css'
 
-import VSelect from "vue-select";
+import VSelect from 'vue-select'
 
-import { createApp } from "vue";
+import { createApp } from 'vue'
 
-import App from "./App.vue";
-import router from "./router";
+import App from './App.vue'
+import router from './router'
 
-const app = createApp(App);
+const app = createApp(App)
 
-app.component("vSelect", VSelect);
+app.component('vSelect', VSelect)
 
-app.use(router);
+app.use(router)
 
-app.mount("#app");
+app.mount('#app')

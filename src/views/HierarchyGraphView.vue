@@ -5,9 +5,9 @@
 </template>
 
 <script setup lang="ts">
-import { useHumamState } from "@/helpers/useHumamState";
+import { useHumamState } from '@/helpers/useHumamState'
 
-import HierarchyEdgeBundling from "@/components/graph/HierarchyEdgeBundling.vue";
+import HierarchyEdgeBundling from '@/components/graph/HierarchyEdgeBundling.vue'
 
-const { state } = useHumamState();
+const { state } = useHumamState()
 </script>

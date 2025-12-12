@@ -1,12 +1,12 @@
-import { reactive } from "vue";
+import { reactive } from 'vue'
 
 const state = reactive({
   areas: [],
   nodes: [],
   links: [],
-  loading: true
-});
+  loading: true,
+})
 
 export const useHumamState = () => ({
   state,
-});
+})

@@ -6,10 +6,10 @@
 </template>
 
 <script setup lang="ts">
-import { useHumamState } from "@/helpers/useHumamState";
+import { useHumamState } from '@/helpers/useHumamState'
 
-import ForceDirectedGraphLayers from "@/components/graph/ForceDirectedGraphLayers.vue";
-import ForceDirectedGraphAreas from "@/components/graph/ForceDirectedGraphAreas.vue";
+import ForceDirectedGraphLayers from '@/components/graph/ForceDirectedGraphLayers.vue'
+import ForceDirectedGraphAreas from '@/components/graph/ForceDirectedGraphAreas.vue'
 
-const { state } = useHumamState();
+const { state } = useHumamState()
 </script>
