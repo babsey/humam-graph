@@ -1,0 +1,206 @@
+{
+    "bankssts": {
+        "abbreviation": "BSTS",
+        "description": "banks of superior temporal sulcus",
+        "lobe": "temporal",
+        "id": "cortex.temporal.bankssts"
+    },
+    "caudalanteriorcingulate": {
+        "abbreviation": "CAC",
+        "description": "Caudal anterior-cingulate cortex",
+        "lobe": "cingulate",
+        "id": "cortex.cingulate.caudalanteriorcingulate"
+    },
+    "caudalmiddlefrontal": {
+        "abbreviation": "CMF",
+        "description": "Caudal middle frontal gyrus",
+        "lobe": "frontal",
+        "id": "cortex.frontal.caudalmiddlefrontal"
+    },
+    "cuneus": {
+        "abbreviation": "CUN",
+        "description": "Cuneus cortex",
+        "lobe": "occipital",
+        "id": "cortex.occipital.cuneus"
+    },
+    "entorhinal": {
+        "abbreviation": "ENT",
+        "description": "Entorhinal cortex",
+        "lobe": "temporal",
+        "id": "cortex.temporal.entorhinal"
+    },
+    "fusiform": {
+        "abbreviation": "FUS",
+        "description": "Fusiform gyrus",
+        "lobe": "temporal",
+        "id": "cortex.temporal.fusiform"
+    },
+    "inferiorparietal": {
+        "abbreviation": "INFP",
+        "description": "Inferior parietal cortex",
+        "lobe": "parietal",
+        "id": "cortex.parietal.inferiorparietal"
+    },
+    "inferiortemporal": {
+        "abbreviation": "IT",
+        "description": "Inferior temporal gyrus",
+        "lobe": "temporal",
+        "id": "cortex.temporal.inferiortemporal"
+    },
+    "isthmuscingulate": {
+        "abbreviation": "ISTC",
+        "description": "Isthmus-cingulate cortex",
+        "lobe": "cingulate",
+        "id": "cortex.cingulate.isthmuscingulate"
+    },
+    "lateraloccipital": {
+        "abbreviation": "LOCC",
+        "description": "Lateral occipital cortex",
+        "lobe": "occipital",
+        "id": "cortex.occipital.lateraloccipital"
+    },
+    "lateralorbitofrontal": {
+        "abbreviation": "LORB",
+        "description": "Lateral orbital frontal cortex",
+        "lobe": "frontal",
+        "id": "cortex.frontal.lateralorbitofrontal"
+    },
+    "lingual": {
+        "abbreviation": "LIN",
+        "description": "Lingual gyrus",
+        "lobe": "occipital",
+        "id": "cortex.occipital.lingual"
+    },
+    "medialorbitofrontal": {
+        "abbreviation": "MORB",
+        "description": "Medial orbital frontal cortex",
+        "lobe": "frontal",
+        "id": "cortex.frontal.medialorbitofrontal"
+    },
+    "middletemporal": {
+        "abbreviation": "MT",
+        "description": "Middle temporal gyrus",
+        "lobe": "temporal",
+        "id": "cortex.temporal.middletemporal"
+    },
+    "parahippocampal": {
+        "abbreviation": "PARH",
+        "description": "Parahippocampal gyrus",
+        "lobe": "temporal",
+        "id": "cortex.temporal.parahippocampal"
+    },
+    "paracentral": {
+        "abbreviation": "PARC",
+        "description": "Paracentral lobule",
+        "lobe": "frontal",
+        "id": "cortex.frontal.paracentral"
+    },
+    "parsopercularis": {
+        "abbreviation": "POPE",
+        "description": "Pars opercularis",
+        "lobe": "frontal",
+        "id": "cortex.frontal.parsopercularis"
+    },
+    "parsorbitalis": {
+        "abbreviation": "PORB",
+        "description": "Pars orbitalis",
+        "lobe": "frontal",
+        "id": "cortex.frontal.parsorbitalis"
+    },
+    "parstriangularis": {
+        "abbreviation": "PTRI",
+        "description": "Pars triangularis",
+        "lobe": "frontal",
+        "id": "cortex.frontal.parstriangularis"
+    },
+    "pericalcarine": {
+        "abbreviation": "PCAL",
+        "description": "Pericalcarine cortex",
+        "lobe": "occipital",
+        "id": "cortex.occipital.pericalcarine"
+    },
+    "postcentral": {
+        "abbreviation": "PSTS",
+        "description": "Postcentral gyrus",
+        "lobe": "parietal",
+        "id": "cortex.parietal.postcentral"
+    },
+    "posteriorcingulate": {
+        "abbreviation": "PC",
+        "description": "Posterior-cingulate cortex",
+        "lobe": "cingulate",
+        "id": "cortex.cingulate.posteriorcingulate"
+    },
+    "precentral": {
+        "abbreviation": "PREC",
+        "description": "Precentral gyrus",
+        "lobe": "frontal",
+        "id": "cortex.frontal.precentral"
+    },
+    "precuneus": {
+        "abbreviation": "PCUN",
+        "description": "Precuneus cortex",
+        "lobe": "parietal",
+        "id": "cortex.parietal.precuneus"
+    },
+    "rostralanteriorcingulate": {
+        "abbreviation": "RAC",
+        "description": "Rostral anterior cingulate cortex",
+        "lobe": "cingulate",
+        "id": "cortex.cingulate.rostralanteriorcingulate"
+    },
+    "rostralmiddlefrontal": {
+        "abbreviation": "RMF",
+        "description": "Rostral middle frontal gyrus",
+        "lobe": "frontal",
+        "id": "cortex.frontal.rostralmiddlefrontal"
+    },
+    "superiorfrontal": {
+        "abbreviation": "SF",
+        "description": "Superior frontal gyrus",
+        "lobe": "frontal",
+        "id": "cortex.frontal.superiorfrontal"
+    },
+    "superiorparietal": {
+        "abbreviation": "SP",
+        "description": "Superior parietal cortex",
+        "lobe": "parietal",
+        "id": "cortex.parietal.superiorparietal"
+    },
+    "superiortemporal": {
+        "abbreviation": "ST",
+        "description": "Superior temporal gyrus",
+        "lobe": "temporal",
+        "id": "cortex.temporal.superiortemporal"
+    },
+    "supramarginal": {
+        "abbreviation": "SMAR",
+        "description": "Supramarginal gyrus",
+        "lobe": "parietal",
+        "id": "cortex.parietal.supramarginal"
+    },
+    "frontalpole": {
+        "abbreviation": "FP",
+        "description": "Frontal pole",
+        "lobe": "frontal",
+        "id": "cortex.frontal.frontalpole"
+    },
+    "temporalpole": {
+        "abbreviation": "TP",
+        "description": "Temporal pole",
+        "lobe": "temporal",
+        "id": "cortex.temporal.temporalpole"
+    },
+    "transversetemporal": {
+        "abbreviation": "TT",
+        "description": "Transverse temporal cortex",
+        "lobe": "temporal",
+        "id": "cortex.temporal.transversetemporal"
+    },
+    "insula": {
+        "abbreviation": "INS",
+        "description": "Insula",
+        "lobe": "insula",
+        "id": "cortex.insula.insula"
+    }
+}

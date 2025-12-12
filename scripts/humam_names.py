@@ -1,0 +1,41 @@
+
+areas = [
+    "bankssts",
+    "caudalanteriorcingulate",
+    "caudalmiddlefrontal",
+    "cuneus",
+    "entorhinal",
+    "frontalpole",
+    "fusiform",
+    "inferiorparietal",
+    "inferiortemporal",
+    "insula",
+    "isthmuscingulate",
+    "lateraloccipital",
+    "lateralorbitofrontal",
+    "lingual",
+    "medialorbitofrontal",
+    "middletemporal",
+    "paracentral",
+    "parahippocampal",
+    "parsopercularis",
+    "parsorbitalis",
+    "parstriangularis",
+    "pericalcarine",
+    "postcentral",
+    "posteriorcingulate",
+    "precentral",
+    "precuneus",
+    "rostralanteriorcingulate",
+    "rostralmiddlefrontal",
+    "superiorfrontal",
+    "superiorparietal",
+    "superiortemporal",
+    "supramarginal",
+    "temporalpole",
+    "transversetemporal",
+]
+
+layers = ["II/III", "IV", "V", "VI"]
+
+populations = ["E", "I"]
