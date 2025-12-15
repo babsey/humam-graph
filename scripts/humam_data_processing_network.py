@@ -33,7 +33,7 @@ sn_total = sn.groupby(groupBy).sum().T.groupby(groupBy).sum()
 nodes = [
     {
         "name": str(nn_mapping[v]),
-        "size": int(nn_total_values[i]),
+        "value": int(nn_total_values[i]),
     }
     for (i, v) in enumerate(nn_total.index.values)
 ]
@@ -43,7 +43,7 @@ links = [
     {
         "target": str(nn_mapping[t]),
         "source": str(nn_mapping[s]),
-        "values": int(sn_total.loc[t, s]),
+        "value": int(sn_total.loc[t, s]),
     }
     for t in sn_total.columns.values
     for s in sn_total.index.values
