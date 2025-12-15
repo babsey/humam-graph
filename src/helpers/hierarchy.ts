@@ -1,6 +1,18 @@
-export function hierarchy(data, delimiter = '.') {
+export interface IHierarchyNode {
+  id: string
+  name: string
+  children: IHierarchyNode[]
+  parent?: IHierarchyNode
+  data?: {
+    name: string
+  }
+}
+
+export const hierarchy = (nodes: IHierarchyNode[], delimiter = '.') => {
   let root
-  const map = new Map()
+  const data = nodes.map((node) => ({ ...node, name: node.id }))
+
+  const map: Map<string, IHierarchyNode> = new Map()
   data.forEach(function find(data) {
     const { name } = data
     if (map.has(name)) return map.get(name)
@@ -18,5 +30,8 @@ export function hierarchy(data, delimiter = '.') {
   return root
 }
 
-export const id = (node) => `${node.parent ? id(node.parent) + '.' : ''}${node.data.name}`
-export const getParent = (d, n = 1) => (n == 0 ? d : getParent(d.parent, n - 1))
+export const id = (node: IHierarchyNode): string =>
+  `${node.parent ? id(node.parent) + '.' : ''}${node.data?.name}`
+
+export const getParent = (d: IHierarchyNode, n: number = 1): IHierarchyNode =>
+  n > 0 && d.parent ? getParent(d.parent, n - 1) : d

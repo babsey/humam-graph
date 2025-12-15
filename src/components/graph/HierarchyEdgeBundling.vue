@@ -12,44 +12,23 @@
 
 <script setup lang="ts">
 // https://observablehq.com/@d3/hierarchical-edge-bundling
-import { onMounted, ref, toRef, watch } from 'vue'
+import { onMounted, watch } from 'vue'
 import * as d3 from 'd3'
 
-import { getParent, hierarchy, id } from '@/helpers/hierarchy'
-import { useHumamState } from '@/helpers/useHumamState'
+import { getParent, id } from '@/helpers/hierarchy'
+import { state, type ILink, type INode } from '@/state'
 import { abbreviation } from '@/helpers/parcellation'
 import { color } from '@/helpers/theme'
-
-const { state } = useHumamState()
-
-const props = defineProps<{ nodes: any[]; links: any[] }>()
-const nodes = toRef(() => props.nodes.map((d) => ({ ...d })))
-const links = toRef(() => props.links.map((d) => ({ ...d })))
-
-const filterLinksBy = ref('')
 
 const width = 850
 const radius = width / 2
 
-const filterLinks = (links) => {
-  let filteredLinks = [...links]
-
-  if (filterLinksBy.value)
-    filteredLinks = filteredLinks.filter(
-      (d) => d.source.includes(filterLinksBy.value) || d.target.includes(filterLinksBy.value),
-    )
-  return filteredLinks
-}
-
-const nodeOutgoings = (nodes, links) => {
-  const map = new Map(nodes.leaves().map((d) => [id(d), d]))
-  for (const n of nodes.leaves()) {
-    n.outgoing = links.filter((l) => l.source === id(n)).map((l) => [n, map.get(l.target)])
-  }
-  return nodes
-}
-
-function addArc(ref, data, level = 1, r = 24) {
+function addArc(
+  ref: d3.Selection,
+  data: { nodes: INode[]; links: ILink[] },
+  level: number = 1,
+  r: number = 24,
+) {
   const arcInnerRadius = radius - r
   const arcWidth = 2
   const arcOuterRadius = arcInnerRadius + arcWidth
@@ -80,14 +59,14 @@ function addArc(ref, data, level = 1, r = 24) {
     .attr('data', (d) => d.name)
     .attr('d', (d) => arc(d))
     .attr('fill', (d) =>
-      filterLinksBy.value.length === 0 || filterLinksBy.value.includes(d.id)
+      state.filterLinksBy.length === 0 || state.filterLinksBy.includes(d.id)
         ? color(d.id)
         : 'var(--color-text)',
     )
     .attr('stroke', 'rgba(0,0,0,0)')
     .attr('stroke-width', '20px')
     .on('click', (_, d) => {
-      filterLinksBy.value = filterLinksBy.value != d.id ? d.id : ''
+      state.filterLinksBy = state.filterLinksBy != d.id ? d.id : ''
       update()
     })
 
@@ -109,13 +88,8 @@ function addArc(ref, data, level = 1, r = 24) {
   return leafGroups
 }
 
-const update = () => {
-  if (!nodes.value || !links.value) return
+const render = () => {
   const selectedAreas = state.areas.length > 0
-
-  const data = hierarchy(nodes.value)
-  const tree = d3.cluster().size([2 * Math.PI, radius - 80])
-  const root = tree(nodeOutgoings(d3.hierarchy(data), filterLinks(links.value)))
 
   const svg = d3
     .select('#humam_hierarchy_edge_bundling')
@@ -127,34 +101,34 @@ const update = () => {
   svg.selectAll('g').remove()
 
   const arcs = svg.append('g')
-  let leafGroups
   if (selectedAreas) {
-    addArc(arcs, root.leaves(), 1, 60)
-    leafGroups = addArc(arcs, root.leaves(), 2, 30)
+    addArc(arcs, state.root.leaves(), 1, 60)
+    addArc(arcs, state.root.leaves(), 2, 30)
   } else {
-    leafGroups = addArc(arcs, root.leaves(), 1, 30)
+    addArc(arcs, state.root.leaves(), 1, 30)
   }
+
   svg
     .append('g')
     .selectAll()
-    .data(root.leaves())
+    .data(state.root.leaves())
     .join('g')
     .attr('class', 'node')
-    .attr('transform', (d) => `rotate(${(d.x * 180) / Math.PI - 90}) translate(${d.y},0)`)
+    .attr('transform', (d: INode) => `rotate(${(d.x * 180) / Math.PI - 90}) translate(${d.y},0)`)
     .append('text')
     // .on("click", (_, d) => {
     //   filterLinksBy.value = filterLinksBy.value != id(d) ? id(d) : "";
     //   update();
     // })
     .attr('dy', '0.31em')
-    .attr('x', (d) => (d.x < Math.PI ? 2 : -2))
+    .attr('x', (d: INode) => (d.x < Math.PI ? 2 : -2))
     .attr('font-size', '1.4em')
     // .attr("fill", "var(--color-text)")
-    .attr('fill', (d) => color(id(d)))
-    .attr('text-anchor', (d) => (d.x < Math.PI ? 'start' : 'end'))
-    .attr('transform', (d) => (d.x >= Math.PI ? 'rotate(180)' : null))
+    .attr('fill', (d: INode) => color(id(d)))
+    .attr('text-anchor', (d: INode) => (d.x < Math.PI ? 'start' : 'end'))
+    .attr('transform', (d: INode) => (d.x >= Math.PI ? 'rotate(180)' : null))
     .style('cursor', 'pointer')
-    .text((d) => abbreviation(d.data.name) ?? d.data.name)
+    .text((d: INode) => abbreviation(d.data.name) ?? d.data.name)
     .each(function (d) {
       d.text = this
     })
@@ -169,15 +143,13 @@ const update = () => {
     .radius((d) => d.y)
     .angle((d) => d.x)
 
-  const k = 6 // 2^k colors segments per curve
-
   svg
     .append('g')
     .attr('class', 'link')
     .attr('stroke', 'var(--color-text)')
     .attr('fill', 'none')
     .selectAll()
-    .data(root.leaves().flatMap((d) => d.outgoing))
+    .data(state.root.leaves().flatMap((d) => d.outgoing))
     .join('path')
     .style('opacity', 0.3)
     .attr('stroke', (d) => color(id(d[0])))
@@ -201,42 +173,42 @@ const update = () => {
       .raise()
 
     // nodes
-    d3.selectAll(root.leaves().map((d) => d.text)).attr('fill', 'var(--color-text)')
+    d3.selectAll(state.root.leaves().map((d) => d.text)).attr('fill', 'var(--color-text)')
     d3.selectAll(d.outgoing.map(([, d]) => d.text))
-      .attr('fill', (d) => color(id(d)))
+      .attr('fill', (d: INode) => color(id(d)))
       .attr('font-weight', 'bold')
 
     // focused node
     d3.select(this)
       .attr('font-weight', 'bold')
-      .attr('fill', (d) => color(id(d)))
+      .attr('fill', (d: INode) => color(id(d)))
   }
 
-  function outed(_, d) {
+  function outed() {
     // links
     // link.style("mix-blend-mode", "multiply");
     svg
       .selectAll('.link')
       .selectAll('path')
       .style('opacity', 0.3)
-      .attr('stroke', (d) => color(id(d[0])))
+      .attr('stroke', (d: [INode, INode]) => color(id(d[0])))
     // d3.selectAll(d.outgoing.map((d) => d.path)).attr("stroke", (d) => color(id(d[0])));
 
     // nodes
-    d3.selectAll(root.leaves().map((d) => d.text))
+    d3.selectAll(state.root.leaves().map((d: INode) => d.text))
       // .attr("fill", "var(--color-text)")
-      .attr('fill', (d) => color(id(d)))
+      .attr('fill', (d: INode) => color(id(d)))
       .attr('font-weight', null)
   }
 }
 
-onMounted(update)
+onMounted(render)
 
 watch(
-  () => [props.nodes, props.links],
+  () => [state.nodes, state.links],
   () => {
-    filterLinksBy.value = ''
-    update()
+    state.filterLinksBy = ''
+    render()
   },
 )
 </script>

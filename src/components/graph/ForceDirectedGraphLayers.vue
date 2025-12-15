@@ -5,16 +5,12 @@
 <script setup lang="ts">
 // https://observablehq.com/@d3/force-directed-graph/2
 import * as d3 from 'd3'
-import { onMounted, ref, watch } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import { areaColor, colorExc, colorInh } from '@/helpers/theme'
-import { abbreviation, layers, nameMapping } from '@/helpers/parcellation'
-
-const props = defineProps<{ nodes: any[]; links: any[] }>()
-// The force simulation mutates links and nodes, so create a copy
-// so that re-evaluating this cell produces the same result.
-const nodes = ref([])
-const links = ref([])
+import { abbreviation, addPsitionOffsets, getArea, getLobe, layers } from '@/helpers/parcellation'
+import { state, type ILink, type INode } from '@/state'
+import { watch } from 'vue'
 
 const svg = ref(null)
 
@@ -22,30 +18,7 @@ const svg = ref(null)
 const width = 1280
 const height = 920
 
-const offsetY = {
-  'II/III': -100,
-  IV: -35,
-  V: 30,
-  VI: 95,
-}
-
-const offsetX = {
-  E: -45,
-  I: 45,
-}
-
-function classify(items: any[]) {
-  items.forEach((item) => {
-    const nameMap = nameMapping(item.name)
-    for (const k in nameMap) {
-      item[k] = nameMap[k]
-    }
-    item.offsetY = offsetY[nameMap.layer]
-    item.offsetX = offsetX[nameMap.pop]
-  })
-}
-
-const linkArc = (d) => {
+const linkArc = (d: d3.Selection) => {
   const x1 = d.source.parent.x + d.source.offsetX
   const y1 = d.source.parent.y + d.source.offsetY
   const x2 = d.target.parent.x + d.target.offsetX
@@ -60,7 +33,7 @@ const linkArc = (d) => {
   `
 }
 
-const addPop = (d, popType: string) => {
+const addPop = (d: d3.Selection, popType: string) => {
   const pop = d.append('g').attr('transform', `translate(${popType === 'I' ? 45 : -45}, 2)`)
   let text
 
@@ -85,9 +58,9 @@ const addPop = (d, popType: string) => {
   text.attr('font-size', '1.2em').text(popType)
 }
 
-const addLayers = function (d) {
-  for (const i in layers) {
-    const layer = d.append('g').attr('transform', `translate(0, ${-100 + i * 65})`)
+const addLayers = function (d: d3.Selection) {
+  for (const idx in layers) {
+    const layer = d.append('g').attr('transform', `translate(0, ${-100 + idx * 65})`)
 
     layer
       .append('rect')
@@ -102,74 +75,51 @@ const addLayers = function (d) {
       .append('text')
       .attr('transform', `translate(-85, -13)`)
       .attr('fill', 'black')
-      .text(layers[i])
+      .text(layers[idx])
 
     addPop(layer, 'E')
     addPop(layer, 'I')
   }
 }
 
-const addLinks = function (d) {
-  d.append('text')
-    .attr('fill', 'white')
-    .data([{ name: 'bla' }, { name: 'foo' }, { name: 'xxx' }])
-    .text((d) => d.name)
-}
+const render = () => {
+  addPsitionOffsets(state.nodes)
 
-const update = () => {
-  nodes.value = props.nodes.map((d) => ({ ...d }))
-  links.value = props.links.map((d) => ({ ...d }))
+  const areaGroup = d3.group(state.nodes, (d: INode) =>
+    ['cortex', getLobe(d.id), getArea(d.id)].join('.'),
+  )
 
-  classify(nodes.value)
-
-  const areaGroups = d3.group(nodes.value, (d) => 'cortex.' + d.lobe + '.' + d.area)
-
-  const areas = Array.from(areaGroups).map(([name, children]: [string, any[]]) => {
-    const size = d3.sum(children.map((c) => c.size))
-
-    const nameMap = nameMapping(name)
-    const data = { children, size, ...nameMap }
+  const areaNodes = Array.from(areaGroup).map(([id, children]: [string, INode[]]) => {
+    const value = d3.sum(children.map((c) => c.value))
+    const data = { children, value, id }
     children.forEach((child) => {
       child.parent = data
     })
     return data
   })
 
-  const nodeMap = new Map(nodes.value.map((node) => [node.id, node]))
-
   const areaLinkGroups = d3.flatGroup(
-    links.value,
-    (d) => {
-      const s = nameMapping(d.source)
-      return 'cortex.' + s.lobe + '.' + s.area
-    },
-    (d) => {
-      const s = nameMapping(d.target)
-      return 'cortex.' + s.lobe + '.' + s.area
-    },
+    state.links,
+    (d: ILink) => ['cortex', getLobe(d.source.id), getArea(d.source.id)].join('.'),
+    (d: ILink) => ['cortex', getLobe(d.target.id), getArea(d.target.id)].join('.'),
   )
 
-  const areaLinks = areaLinkGroups.map(([source, target, children]: [string, string, any[]]) => ({
+  const areaLinks = areaLinkGroups.map(([source, target, children]: [string, string, INode[]]) => ({
     source,
     target,
     children,
   }))
 
-  links.value.forEach((link) => {
-    link.source = nodeMap.get(link.source)
-    link.target = nodeMap.get(link.target)
-  })
-
   d3.select('.network').selectAll('g').remove()
 
   // Create a simulation with several forces.
   const simulation = d3
-    .forceSimulation(areas)
+    .forceSimulation(areaNodes)
     .force(
       'link',
       d3
         .forceLink(areaLinks)
-        .id((d) => d.id)
+        .id((d: ILink) => d.id)
         .strength(0.03),
     )
     .force('charge', d3.forceManyBody().strength(-3000))
@@ -180,9 +130,9 @@ const update = () => {
     .select('.network')
     .append('g')
     .selectAll()
-    .data(areas)
+    .data(areaNodes)
     .join('g')
-    .attr('color', (d) => areaColor(d.id))
+    .attr('color', (d: INode) => areaColor(d.id))
 
   node
     .append('rect')
@@ -196,7 +146,7 @@ const update = () => {
     .attr('stroke', 'currentcolor')
     .attr('stroke-width', 3.5)
     .append('title')
-    .text((d) => d.name)
+    .text((d: INode) => d.name)
 
   // Add a line for each link, and a circle for each node.
   const link = d3
@@ -206,11 +156,11 @@ const update = () => {
     .attr('stroke', 'currentcolor')
     .attr('stroke-width', 3.5)
     .selectAll('path')
-    .data(links.value)
+    .data(state.links)
     .join('path')
     .style('opacity', 0.2)
     .style('pointer-events', 'none')
-    .style('color', (d) => areaColor(d.source.parent.id))
+    .style('color', (d: ILink) => areaColor(d.source.parent.id))
   // .attr("marker-end", () => `url(${new URL(`#arrow-E`, location)})`);
 
   node
@@ -220,9 +170,8 @@ const update = () => {
     .style('text-anchor', 'middle')
     .style('pointer-events', 'none')
     .attr('transform', 'translate(0, -150)')
-    .text((d) => `${d.area} [${abbreviation(d.area)}]`)
+    .text((d: INode) => `${getArea(d.id)} [${abbreviation(getArea(d.id))}]`)
 
-  link.call(addLinks, areaLinks)
   node.call(addLayers)
 
   // Add a drag behavior.
@@ -232,31 +181,25 @@ const update = () => {
   function ticked() {
     link.attr('d', linkArc)
 
-    // link
-    //   .attr("x1", (d) => d.source.parent.x + d.source.offsetX)
-    //   .attr("y1", (d) => d.source.parent.y + d.source.offsetY)
-    //   .attr("x2", (d) => d.target.parent.x + d.target.offsetX)
-    //   .attr("y2", (d) => d.target.parent.y + d.target.offsetY);
-
-    node.attr('transform', (d) => `translate(${d.x},${d.y})`).selectAll('text')
+    node.attr('transform', (d: INode) => `translate(${d.x},${d.y})`).selectAll('text')
   }
 
   // Reheat the simulation when drag starts, and fix the subject position.
-  function dragstarted(event) {
+  function dragstarted(event: MouseEvent) {
     if (!event.active) simulation.alphaTarget(0.3).restart()
     event.subject.fx = event.subject.x
     event.subject.fy = event.subject.y
   }
 
   // Update the subject (dragged node) position during drag.
-  function dragged(event) {
+  function dragged(event: MouseEvent) {
     event.subject.fx = event.x
     event.subject.fy = event.y
   }
 
   // Restore the target alpha so the simulation cools after dragging ends.
   // Unfix the subject position now that it’s no longer being dragged.
-  function dragended(event) {
+  function dragended(event: MouseEvent) {
     if (!event.active) simulation.alphaTarget(0)
     event.subject.fx = null
     event.subject.fy = null
@@ -276,7 +219,7 @@ onMounted(() => {
     .selectAll('marker')
     .data(['E'])
     .join('marker')
-    .attr('id', (d) => `arrow-${d}`)
+    .attr('id', (d: string) => `arrow-${d}`)
     .attr('viewBox', '0 -5 10 10')
     .attr('refX', 15)
     .attr('refY', -0.5)
@@ -289,13 +232,8 @@ onMounted(() => {
 
   d3.select(svg.value).append('g').attr('class', 'network')
 
-  update()
+  render()
 })
 
-watch(
-  () => [props.nodes, props.links],
-  () => {
-    update()
-  },
-)
+watch(() => [state.nodes, state.links], render)
 </script>

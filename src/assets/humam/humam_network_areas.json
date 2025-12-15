@@ -1,1992 +1,1992 @@
 {
   "nodes": [
     {
-      "name": "cortex.temporal.bankssts",
-      "size": 125100
+      "id": "cortex.temporal.bankssts",
+      "value": 125100
     },
     {
-      "name": "cortex.cingulate.caudalanteriorcingulate",
-      "size": 56877
+      "id": "cortex.cingulate.caudalanteriorcingulate",
+      "value": 56877
     },
     {
-      "name": "cortex.frontal.caudalmiddlefrontal",
-      "size": 68056
+      "id": "cortex.frontal.caudalmiddlefrontal",
+      "value": 68056
     },
     {
-      "name": "cortex.occipital.cuneus",
-      "size": 104862
+      "id": "cortex.occipital.cuneus",
+      "value": 104862
     },
     {
-      "name": "cortex.temporal.entorhinal",
-      "size": 38219
+      "id": "cortex.temporal.entorhinal",
+      "value": 38219
     },
     {
-      "name": "cortex.frontal.frontalpole",
-      "size": 95233
+      "id": "cortex.frontal.frontalpole",
+      "value": 95233
     },
     {
-      "name": "cortex.temporal.fusiform",
-      "size": 122376
+      "id": "cortex.temporal.fusiform",
+      "value": 122376
     },
     {
-      "name": "cortex.parietal.inferiorparietal",
-      "size": 109700
+      "id": "cortex.parietal.inferiorparietal",
+      "value": 109700
     },
     {
-      "name": "cortex.temporal.inferiortemporal",
-      "size": 138850
+      "id": "cortex.temporal.inferiortemporal",
+      "value": 138850
     },
     {
-      "name": "cortex.insula.insula",
-      "size": 102649
+      "id": "cortex.insula.insula",
+      "value": 102649
     },
     {
-      "name": "cortex.cingulate.isthmuscingulate",
-      "size": 85204
+      "id": "cortex.cingulate.isthmuscingulate",
+      "value": 85204
     },
     {
-      "name": "cortex.occipital.lateraloccipital",
-      "size": 75126
+      "id": "cortex.occipital.lateraloccipital",
+      "value": 75126
     },
     {
-      "name": "cortex.frontal.lateralorbitofrontal",
-      "size": 78500
+      "id": "cortex.frontal.lateralorbitofrontal",
+      "value": 78500
     },
     {
-      "name": "cortex.occipital.lingual",
-      "size": 111609
+      "id": "cortex.occipital.lingual",
+      "value": 111609
     },
     {
-      "name": "cortex.frontal.medialorbitofrontal",
-      "size": 59175
+      "id": "cortex.frontal.medialorbitofrontal",
+      "value": 59175
     },
     {
-      "name": "cortex.temporal.middletemporal",
-      "size": 138850
+      "id": "cortex.temporal.middletemporal",
+      "value": 138850
     },
     {
-      "name": "cortex.frontal.paracentral",
-      "size": 157448
+      "id": "cortex.frontal.paracentral",
+      "value": 157448
     },
     {
-      "name": "cortex.temporal.parahippocampal",
-      "size": 63474
+      "id": "cortex.temporal.parahippocampal",
+      "value": 63474
     },
     {
-      "name": "cortex.frontal.parsopercularis",
-      "size": 80860
+      "id": "cortex.frontal.parsopercularis",
+      "value": 80860
     },
     {
-      "name": "cortex.frontal.parsorbitalis",
-      "size": 67455
+      "id": "cortex.frontal.parsorbitalis",
+      "value": 67455
     },
     {
-      "name": "cortex.frontal.parstriangularis",
-      "size": 74867
+      "id": "cortex.frontal.parstriangularis",
+      "value": 74867
     },
     {
-      "name": "cortex.occipital.pericalcarine",
-      "size": 214750
+      "id": "cortex.occipital.pericalcarine",
+      "value": 214750
     },
     {
-      "name": "cortex.parietal.postcentral",
-      "size": 182846
+      "id": "cortex.parietal.postcentral",
+      "value": 182846
     },
     {
-      "name": "cortex.cingulate.posteriorcingulate",
-      "size": 88152
+      "id": "cortex.cingulate.posteriorcingulate",
+      "value": 88152
     },
     {
-      "name": "cortex.frontal.precentral",
-      "size": 76781
+      "id": "cortex.frontal.precentral",
+      "value": 76781
     },
     {
-      "name": "cortex.parietal.precuneus",
-      "size": 99166
+      "id": "cortex.parietal.precuneus",
+      "value": 99166
     },
     {
-      "name": "cortex.cingulate.rostralanteriorcingulate",
-      "size": 56877
+      "id": "cortex.cingulate.rostralanteriorcingulate",
+      "value": 56877
     },
     {
-      "name": "cortex.frontal.rostralmiddlefrontal",
-      "size": 76818
+      "id": "cortex.frontal.rostralmiddlefrontal",
+      "value": 76818
     },
     {
-      "name": "cortex.frontal.superiorfrontal",
-      "size": 76420
+      "id": "cortex.frontal.superiorfrontal",
+      "value": 76420
     },
     {
-      "name": "cortex.parietal.superiorparietal",
-      "size": 99166
+      "id": "cortex.parietal.superiorparietal",
+      "value": 99166
     },
     {
-      "name": "cortex.temporal.superiortemporal",
-      "size": 104750
+      "id": "cortex.temporal.superiortemporal",
+      "value": 104750
     },
     {
-      "name": "cortex.parietal.supramarginal",
-      "size": 148774
+      "id": "cortex.parietal.supramarginal",
+      "value": 148774
     },
     {
-      "name": "cortex.temporal.temporalpole",
-      "size": 109300
+      "id": "cortex.temporal.temporalpole",
+      "value": 109300
     },
     {
-      "name": "cortex.temporal.transversetemporal",
-      "size": 180549
+      "id": "cortex.temporal.transversetemporal",
+      "value": 180549
     }
   ],
   "links": [
     {
       "target": "cortex.temporal.bankssts",
       "source": "cortex.temporal.bankssts",
-      "values": 1056310904
+      "value": 1056310904
     },
     {
       "target": "cortex.temporal.bankssts",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 7793073
+      "value": 7793073
     },
     {
       "target": "cortex.temporal.bankssts",
       "source": "cortex.temporal.middletemporal",
-      "values": 41630676
+      "value": 41630676
     },
     {
       "target": "cortex.temporal.bankssts",
       "source": "cortex.temporal.superiortemporal",
-      "values": 26404704
+      "value": 26404704
     },
     {
       "target": "cortex.temporal.bankssts",
       "source": "cortex.parietal.supramarginal",
-      "values": 17805368
+      "value": 17805368
     },
     {
       "target": "cortex.cingulate.caudalanteriorcingulate",
       "source": "cortex.cingulate.caudalanteriorcingulate",
-      "values": 957747888
+      "value": 957747888
     },
     {
       "target": "cortex.cingulate.caudalanteriorcingulate",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 15572085
+      "value": 15572085
     },
     {
       "target": "cortex.cingulate.caudalanteriorcingulate",
       "source": "cortex.cingulate.posteriorcingulate",
-      "values": 63213842
+      "value": 63213842
     },
     {
       "target": "cortex.cingulate.caudalanteriorcingulate",
       "source": "cortex.parietal.precuneus",
-      "values": 15701245
+      "value": 15701245
     },
     {
       "target": "cortex.cingulate.caudalanteriorcingulate",
       "source": "cortex.cingulate.rostralanteriorcingulate",
-      "values": 82696115
+      "value": 82696115
     },
     {
       "target": "cortex.cingulate.caudalanteriorcingulate",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 16908324
+      "value": 16908324
     },
     {
       "target": "cortex.frontal.caudalmiddlefrontal",
       "source": "cortex.frontal.caudalmiddlefrontal",
-      "values": 1067465975
+      "value": 1067465975
     },
     {
       "target": "cortex.frontal.caudalmiddlefrontal",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 9259338
+      "value": 9259338
     },
     {
       "target": "cortex.frontal.caudalmiddlefrontal",
       "source": "cortex.frontal.parsopercularis",
-      "values": 40559116
+      "value": 40559116
     },
     {
       "target": "cortex.frontal.caudalmiddlefrontal",
       "source": "cortex.parietal.postcentral",
-      "values": 5671967
+      "value": 5671967
     },
     {
       "target": "cortex.frontal.caudalmiddlefrontal",
       "source": "cortex.frontal.precentral",
-      "values": 65597025
+      "value": 65597025
     },
     {
       "target": "cortex.frontal.caudalmiddlefrontal",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 50261875
+      "value": 50261875
     },
     {
       "target": "cortex.frontal.caudalmiddlefrontal",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 41943945
+      "value": 41943945
     },
     {
       "target": "cortex.occipital.cuneus",
       "source": "cortex.occipital.cuneus",
-      "values": 702967484
+      "value": 702967484
     },
     {
       "target": "cortex.occipital.cuneus",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 5708314
+      "value": 5708314
     },
     {
       "target": "cortex.occipital.cuneus",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 9141050
+      "value": 9141050
     },
     {
       "target": "cortex.occipital.cuneus",
       "source": "cortex.occipital.lingual",
-      "values": 16975567
+      "value": 16975567
     },
     {
       "target": "cortex.occipital.cuneus",
       "source": "cortex.temporal.parahippocampal",
-      "values": 2236567
+      "value": 2236567
     },
     {
       "target": "cortex.occipital.cuneus",
       "source": "cortex.occipital.pericalcarine",
-      "values": 73002465
+      "value": 73002465
     },
     {
       "target": "cortex.occipital.cuneus",
       "source": "cortex.parietal.precuneus",
-      "values": 19776589
+      "value": 19776589
     },
     {
       "target": "cortex.occipital.cuneus",
       "source": "cortex.parietal.superiorparietal",
-      "values": 15901444
+      "value": 15901444
     },
     {
       "target": "cortex.temporal.entorhinal",
       "source": "cortex.temporal.entorhinal",
-      "values": 959600470
+      "value": 959600470
     },
     {
       "target": "cortex.temporal.entorhinal",
       "source": "cortex.temporal.fusiform",
-      "values": 20231485
+      "value": 20231485
     },
     {
       "target": "cortex.temporal.entorhinal",
       "source": "cortex.insula.insula",
-      "values": 3167592
+      "value": 3167592
     },
     {
       "target": "cortex.temporal.entorhinal",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 14384444
+      "value": 14384444
     },
     {
       "target": "cortex.temporal.entorhinal",
       "source": "cortex.temporal.parahippocampal",
-      "values": 41085147
+      "value": 41085147
     },
     {
       "target": "cortex.temporal.entorhinal",
       "source": "cortex.parietal.precuneus",
-      "values": 5932133
+      "value": 5932133
     },
     {
       "target": "cortex.temporal.entorhinal",
       "source": "cortex.temporal.temporalpole",
-      "values": 40477920
+      "value": 40477920
     },
     {
       "target": "cortex.frontal.frontalpole",
       "source": "cortex.frontal.frontalpole",
-      "values": 881496275
+      "value": 881496275
     },
     {
       "target": "cortex.frontal.frontalpole",
       "source": "cortex.insula.insula",
-      "values": 5635969
+      "value": 5635969
     },
     {
       "target": "cortex.frontal.frontalpole",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 14034790
+      "value": 14034790
     },
     {
       "target": "cortex.frontal.frontalpole",
       "source": "cortex.frontal.medialorbitofrontal",
-      "values": 52546842
+      "value": 52546842
     },
     {
       "target": "cortex.frontal.frontalpole",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 13826122
+      "value": 13826122
     },
     {
       "target": "cortex.frontal.frontalpole",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 7175234
+      "value": 7175234
     },
     {
       "target": "cortex.temporal.fusiform",
       "source": "cortex.temporal.entorhinal",
-      "values": 39671652
+      "value": 39671652
     },
     {
       "target": "cortex.temporal.fusiform",
       "source": "cortex.temporal.fusiform",
-      "values": 1078623327
+      "value": 1078623327
     },
     {
       "target": "cortex.temporal.fusiform",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 6446707
+      "value": 6446707
     },
     {
       "target": "cortex.temporal.fusiform",
       "source": "cortex.temporal.inferiortemporal",
-      "values": 92283480
+      "value": 92283480
     },
     {
       "target": "cortex.temporal.fusiform",
       "source": "cortex.insula.insula",
-      "values": 2159816
+      "value": 2159816
     },
     {
       "target": "cortex.temporal.fusiform",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 38358652
+      "value": 38358652
     },
     {
       "target": "cortex.temporal.fusiform",
       "source": "cortex.occipital.lingual",
-      "values": 23815155
+      "value": 23815155
     },
     {
       "target": "cortex.temporal.fusiform",
       "source": "cortex.temporal.parahippocampal",
-      "values": 30509117
+      "value": 30509117
     },
     {
       "target": "cortex.temporal.fusiform",
       "source": "cortex.parietal.superiorparietal",
-      "values": 4362699
+      "value": 4362699
     },
     {
       "target": "cortex.temporal.fusiform",
       "source": "cortex.temporal.temporalpole",
-      "values": 20577579
+      "value": 20577579
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.temporal.bankssts",
-      "values": 42309314
+      "value": 42309314
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.frontal.caudalmiddlefrontal",
-      "values": 16433356
+      "value": 16433356
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.temporal.fusiform",
-      "values": 16131796
+      "value": 16131796
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 1234834836
+      "value": 1234834836
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.temporal.inferiortemporal",
-      "values": 63366711
+      "value": 63366711
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.insula.insula",
-      "values": 10551136
+      "value": 10551136
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 38740498
+      "value": 38740498
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.temporal.middletemporal",
-      "values": 102182706
+      "value": 102182706
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.frontal.parsopercularis",
-      "values": 14153920
+      "value": 14153920
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.frontal.parsorbitalis",
-      "values": 10747500
+      "value": 10747500
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.frontal.parstriangularis",
-      "values": 7745731
+      "value": 7745731
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.parietal.postcentral",
-      "values": 11089987
+      "value": 11089987
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.frontal.precentral",
-      "values": 25865829
+      "value": 25865829
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 8187518
+      "value": 8187518
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.parietal.superiorparietal",
-      "values": 68613027
+      "value": 68613027
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.temporal.superiortemporal",
-      "values": 23180347
+      "value": 23180347
     },
     {
       "target": "cortex.parietal.inferiorparietal",
       "source": "cortex.parietal.supramarginal",
-      "values": 79700998
+      "value": 79700998
     },
     {
       "target": "cortex.temporal.inferiortemporal",
       "source": "cortex.temporal.fusiform",
-      "values": 75413888
+      "value": 75413888
     },
     {
       "target": "cortex.temporal.inferiortemporal",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 20693968
+      "value": 20693968
     },
     {
       "target": "cortex.temporal.inferiortemporal",
       "source": "cortex.temporal.inferiortemporal",
-      "values": 1335256341
+      "value": 1335256341
     },
     {
       "target": "cortex.temporal.inferiortemporal",
       "source": "cortex.insula.insula",
-      "values": 3210721
+      "value": 3210721
     },
     {
       "target": "cortex.temporal.inferiortemporal",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 16846237
+      "value": 16846237
     },
     {
       "target": "cortex.temporal.inferiortemporal",
       "source": "cortex.temporal.middletemporal",
-      "values": 73341050
+      "value": 73341050
     },
     {
       "target": "cortex.temporal.inferiortemporal",
       "source": "cortex.parietal.superiorparietal",
-      "values": 1411063
+      "value": 1411063
     },
     {
       "target": "cortex.temporal.inferiortemporal",
       "source": "cortex.temporal.temporalpole",
-      "values": 24972445
+      "value": 24972445
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.temporal.entorhinal",
-      "values": 12049195
+      "value": 12049195
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.frontal.frontalpole",
-      "values": 19901613
+      "value": 19901613
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.temporal.fusiform",
-      "values": 4189800
+      "value": 4189800
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 8179576
+      "value": 8179576
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.temporal.inferiortemporal",
-      "values": 7621692
+      "value": 7621692
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.insula.insula",
-      "values": 1084202115
+      "value": 1084202115
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 6314963
+      "value": 6314963
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 55990764
+      "value": 55990764
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.occipital.lingual",
-      "values": 6559849
+      "value": 6559849
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.frontal.medialorbitofrontal",
-      "values": 34948734
+      "value": 34948734
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.temporal.middletemporal",
-      "values": 7213539
+      "value": 7213539
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.frontal.parsopercularis",
-      "values": 10547900
+      "value": 10547900
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.frontal.parsorbitalis",
-      "values": 58857175
+      "value": 58857175
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.frontal.parstriangularis",
-      "values": 54578238
+      "value": 54578238
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.parietal.postcentral",
-      "values": 12249174
+      "value": 12249174
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.frontal.precentral",
-      "values": 3877163
+      "value": 3877163
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.cingulate.rostralanteriorcingulate",
-      "values": 11945631
+      "value": 11945631
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 10857971
+      "value": 10857971
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 7469798
+      "value": 7469798
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.parietal.superiorparietal",
-      "values": 13500402
+      "value": 13500402
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.temporal.superiortemporal",
-      "values": 41434235
+      "value": 41434235
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.parietal.supramarginal",
-      "values": 14270520
+      "value": 14270520
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.temporal.temporalpole",
-      "values": 126725732
+      "value": 126725732
     },
     {
       "target": "cortex.insula.insula",
       "source": "cortex.temporal.transversetemporal",
-      "values": 41262969
+      "value": 41262969
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.cingulate.caudalanteriorcingulate",
-      "values": 20305652
+      "value": 20305652
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.occipital.cuneus",
-      "values": 4969752
+      "value": 4969752
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.temporal.entorhinal",
-      "values": 25880744
+      "value": 25880744
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 911252362
+      "value": 911252362
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.occipital.lingual",
-      "values": 20344318
+      "value": 20344318
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.temporal.parahippocampal",
-      "values": 25670503
+      "value": 25670503
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.occipital.pericalcarine",
-      "values": 3502480
+      "value": 3502480
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.cingulate.posteriorcingulate",
-      "values": 37942327
+      "value": 37942327
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.parietal.precuneus",
-      "values": 34332748
+      "value": 34332748
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.cingulate.rostralanteriorcingulate",
-      "values": 11536167
+      "value": 11536167
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 3269248
+      "value": 3269248
     },
     {
       "target": "cortex.cingulate.isthmuscingulate",
       "source": "cortex.parietal.superiorparietal",
-      "values": 3756226
+      "value": 3756226
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.occipital.cuneus",
-      "values": 15220590
+      "value": 15220590
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.temporal.fusiform",
-      "values": 67313661
+      "value": 67313661
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 27168165
+      "value": 27168165
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.temporal.inferiortemporal",
-      "values": 36175574
+      "value": 36175574
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.insula.insula",
-      "values": 5712608
+      "value": 5712608
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 732722534
+      "value": 732722534
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 3436507
+      "value": 3436507
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.occipital.lingual",
-      "values": 21511172
+      "value": 21511172
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.temporal.middletemporal",
-      "values": 10613274
+      "value": 10613274
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.frontal.parsorbitalis",
-      "values": 11384018
+      "value": 11384018
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.occipital.pericalcarine",
-      "values": 38528336
+      "value": 38528336
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 4025159
+      "value": 4025159
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.parietal.superiorparietal",
-      "values": 13753490
+      "value": 13753490
     },
     {
       "target": "cortex.occipital.lateraloccipital",
       "source": "cortex.temporal.temporalpole",
-      "values": 4378683
+      "value": 4378683
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.frontal.frontalpole",
-      "values": 35208268
+      "value": 35208268
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.insula.insula",
-      "values": 39777314
+      "value": 39777314
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 2698814
+      "value": 2698814
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 747600079
+      "value": 747600079
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.occipital.lingual",
-      "values": 5214504
+      "value": 5214504
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.frontal.medialorbitofrontal",
-      "values": 56057795
+      "value": 56057795
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.temporal.middletemporal",
-      "values": 2912288
+      "value": 2912288
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.frontal.parsorbitalis",
-      "values": 56241858
+      "value": 56241858
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.frontal.parstriangularis",
-      "values": 6493442
+      "value": 6493442
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 8507152
+      "value": 8507152
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.parietal.superiorparietal",
-      "values": 1174531
+      "value": 1174531
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.temporal.superiortemporal",
-      "values": 11889776
+      "value": 11889776
     },
     {
       "target": "cortex.frontal.lateralorbitofrontal",
       "source": "cortex.temporal.temporalpole",
-      "values": 46969617
+      "value": 46969617
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.occipital.cuneus",
-      "values": 16409759
+      "value": 16409759
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.temporal.fusiform",
-      "values": 24262511
+      "value": 24262511
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.insula.insula",
-      "values": 3445084
+      "value": 3445084
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 22588857
+      "value": 22588857
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 12488391
+      "value": 12488391
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 3854783
+      "value": 3854783
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.occipital.lingual",
-      "values": 820747935
+      "value": 820747935
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.temporal.parahippocampal",
-      "values": 20375504
+      "value": 20375504
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.frontal.parsorbitalis",
-      "values": 14846428
+      "value": 14846428
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.occipital.pericalcarine",
-      "values": 54509615
+      "value": 54509615
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.parietal.precuneus",
-      "values": 9433563
+      "value": 9433563
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 5937774
+      "value": 5937774
     },
     {
       "target": "cortex.occipital.lingual",
       "source": "cortex.parietal.superiorparietal",
-      "values": 3396678
+      "value": 3396678
     },
     {
       "target": "cortex.frontal.medialorbitofrontal",
       "source": "cortex.frontal.frontalpole",
-      "values": 90057963
+      "value": 90057963
     },
     {
       "target": "cortex.frontal.medialorbitofrontal",
       "source": "cortex.insula.insula",
-      "values": 16962394
+      "value": 16962394
     },
     {
       "target": "cortex.frontal.medialorbitofrontal",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 38297708
+      "value": 38297708
     },
     {
       "target": "cortex.frontal.medialorbitofrontal",
       "source": "cortex.frontal.medialorbitofrontal",
-      "values": 833147008
+      "value": 833147008
     },
     {
       "target": "cortex.frontal.medialorbitofrontal",
       "source": "cortex.cingulate.rostralanteriorcingulate",
-      "values": 41201056
+      "value": 41201056
     },
     {
       "target": "cortex.frontal.medialorbitofrontal",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 8681360
+      "value": 8681360
     },
     {
       "target": "cortex.frontal.medialorbitofrontal",
       "source": "cortex.temporal.superiortemporal",
-      "values": 6522686
+      "value": 6522686
     },
     {
       "target": "cortex.frontal.medialorbitofrontal",
       "source": "cortex.temporal.temporalpole",
-      "values": 31705609
+      "value": 31705609
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.temporal.bankssts",
-      "values": 109302156
+      "value": 109302156
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 49415747
+      "value": 49415747
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.temporal.inferiortemporal",
-      "values": 108605664
+      "value": 108605664
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.insula.insula",
-      "values": 4499920
+      "value": 4499920
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 7318843
+      "value": 7318843
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 2557240
+      "value": 2557240
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.temporal.middletemporal",
-      "values": 1335251342
+      "value": 1335251342
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 2866197
+      "value": 2866197
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.temporal.superiortemporal",
-      "values": 42927864
+      "value": 42927864
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.parietal.supramarginal",
-      "values": 34681593
+      "value": 34681593
     },
     {
       "target": "cortex.temporal.middletemporal",
       "source": "cortex.temporal.temporalpole",
-      "values": 30301256
+      "value": 30301256
     },
     {
       "target": "cortex.frontal.paracentral",
       "source": "cortex.frontal.paracentral",
-      "values": 807110134
+      "value": 807110134
     },
     {
       "target": "cortex.frontal.paracentral",
       "source": "cortex.parietal.postcentral",
-      "values": 13769649
+      "value": 13769649
     },
     {
       "target": "cortex.frontal.paracentral",
       "source": "cortex.cingulate.posteriorcingulate",
-      "values": 33780565
+      "value": 33780565
     },
     {
       "target": "cortex.frontal.paracentral",
       "source": "cortex.frontal.precentral",
-      "values": 39789816
+      "value": 39789816
     },
     {
       "target": "cortex.frontal.paracentral",
       "source": "cortex.parietal.precuneus",
-      "values": 20339490
+      "value": 20339490
     },
     {
       "target": "cortex.frontal.paracentral",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 22119762
+      "value": 22119762
     },
     {
       "target": "cortex.frontal.paracentral",
       "source": "cortex.parietal.superiorparietal",
-      "values": 2551846
+      "value": 2551846
     },
     {
       "target": "cortex.temporal.parahippocampal",
       "source": "cortex.occipital.cuneus",
-      "values": 2399617
+      "value": 2399617
     },
     {
       "target": "cortex.temporal.parahippocampal",
       "source": "cortex.temporal.entorhinal",
-      "values": 91096620
+      "value": 91096620
     },
     {
       "target": "cortex.temporal.parahippocampal",
       "source": "cortex.temporal.fusiform",
-      "values": 34498052
+      "value": 34498052
     },
     {
       "target": "cortex.temporal.parahippocampal",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 31635017
+      "value": 31635017
     },
     {
       "target": "cortex.temporal.parahippocampal",
       "source": "cortex.occipital.lingual",
-      "values": 22614706
+      "value": 22614706
     },
     {
       "target": "cortex.temporal.parahippocampal",
       "source": "cortex.temporal.parahippocampal",
-      "values": 587666508
+      "value": 587666508
     },
     {
       "target": "cortex.temporal.parahippocampal",
       "source": "cortex.parietal.precuneus",
-      "values": 7572260
+      "value": 7572260
     },
     {
       "target": "cortex.temporal.parahippocampal",
       "source": "cortex.parietal.superiorparietal",
-      "values": 2333446
+      "value": 2333446
     },
     {
       "target": "cortex.temporal.parahippocampal",
       "source": "cortex.temporal.temporalpole",
-      "values": 13009403
+      "value": 13009403
     },
     {
       "target": "cortex.frontal.parsopercularis",
       "source": "cortex.frontal.caudalmiddlefrontal",
-      "values": 24787644
+      "value": 24787644
     },
     {
       "target": "cortex.frontal.parsopercularis",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 4873907
+      "value": 4873907
     },
     {
       "target": "cortex.frontal.parsopercularis",
       "source": "cortex.insula.insula",
-      "values": 4685270
+      "value": 4685270
     },
     {
       "target": "cortex.frontal.parsopercularis",
       "source": "cortex.frontal.parsopercularis",
-      "values": 1104658094
+      "value": 1104658094
     },
     {
       "target": "cortex.frontal.parsopercularis",
       "source": "cortex.frontal.parstriangularis",
-      "values": 48298703
+      "value": 48298703
     },
     {
       "target": "cortex.frontal.parsopercularis",
       "source": "cortex.frontal.precentral",
-      "values": 30530225
+      "value": 30530225
     },
     {
       "target": "cortex.frontal.parsopercularis",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 17312009
+      "value": 17312009
     },
     {
       "target": "cortex.frontal.parsopercularis",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 19198239
+      "value": 19198239
     },
     {
       "target": "cortex.frontal.parsopercularis",
       "source": "cortex.parietal.supramarginal",
-      "values": 11522103
+      "value": 11522103
     },
     {
       "target": "cortex.frontal.parsorbitalis",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 2072913
+      "value": 2072913
     },
     {
       "target": "cortex.frontal.parsorbitalis",
       "source": "cortex.insula.insula",
-      "values": 14643382
+      "value": 14643382
     },
     {
       "target": "cortex.frontal.parsorbitalis",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 3130935
+      "value": 3130935
     },
     {
       "target": "cortex.frontal.parsorbitalis",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 19696209
+      "value": 19696209
     },
     {
       "target": "cortex.frontal.parsorbitalis",
       "source": "cortex.occipital.lingual",
-      "values": 7033280
+      "value": 7033280
     },
     {
       "target": "cortex.frontal.parsorbitalis",
       "source": "cortex.frontal.parsorbitalis",
-      "values": 1074907682
+      "value": 1074907682
     },
     {
       "target": "cortex.frontal.parsorbitalis",
       "source": "cortex.frontal.parstriangularis",
-      "values": 36718993
+      "value": 36718993
     },
     {
       "target": "cortex.frontal.parsorbitalis",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 11716213
+      "value": 11716213
     },
     {
       "target": "cortex.frontal.parsorbitalis",
       "source": "cortex.parietal.superiorparietal",
-      "values": 1885305
+      "value": 1885305
     },
     {
       "target": "cortex.frontal.parstriangularis",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 2313449
+      "value": 2313449
     },
     {
       "target": "cortex.frontal.parstriangularis",
       "source": "cortex.insula.insula",
-      "values": 21027400
+      "value": 21027400
     },
     {
       "target": "cortex.frontal.parstriangularis",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 3521456
+      "value": 3521456
     },
     {
       "target": "cortex.frontal.parstriangularis",
       "source": "cortex.frontal.parsopercularis",
-      "values": 41892153
+      "value": 41892153
     },
     {
       "target": "cortex.frontal.parstriangularis",
       "source": "cortex.frontal.parsorbitalis",
-      "values": 56861039
+      "value": 56861039
     },
     {
       "target": "cortex.frontal.parstriangularis",
       "source": "cortex.frontal.parstriangularis",
-      "values": 955884654
+      "value": 955884654
     },
     {
       "target": "cortex.frontal.parstriangularis",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 22599885
+      "value": 22599885
     },
     {
       "target": "cortex.frontal.parstriangularis",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 3205390
+      "value": 3205390
     },
     {
       "target": "cortex.frontal.parstriangularis",
       "source": "cortex.parietal.superiorparietal",
-      "values": 2624542
+      "value": 2624542
     },
     {
       "target": "cortex.frontal.parstriangularis",
       "source": "cortex.parietal.supramarginal",
-      "values": 4231284
+      "value": 4231284
     },
     {
       "target": "cortex.occipital.pericalcarine",
       "source": "cortex.occipital.cuneus",
-      "values": 52703098
+      "value": 52703098
     },
     {
       "target": "cortex.occipital.pericalcarine",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 2904341
+      "value": 2904341
     },
     {
       "target": "cortex.occipital.pericalcarine",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 16704882
+      "value": 16704882
     },
     {
       "target": "cortex.occipital.pericalcarine",
       "source": "cortex.occipital.lingual",
-      "values": 40709314
+      "value": 40709314
     },
     {
       "target": "cortex.occipital.pericalcarine",
       "source": "cortex.occipital.pericalcarine",
-      "values": 781073786
+      "value": 781073786
     },
     {
       "target": "cortex.occipital.pericalcarine",
       "source": "cortex.parietal.precuneus",
-      "values": 3978390
+      "value": 3978390
     },
     {
       "target": "cortex.occipital.pericalcarine",
       "source": "cortex.parietal.superiorparietal",
-      "values": 3537265
+      "value": 3537265
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.frontal.caudalmiddlefrontal",
-      "values": 7133398
+      "value": 7133398
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 7858646
+      "value": 7858646
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.insula.insula",
-      "values": 11196744
+      "value": 11196744
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.frontal.paracentral",
-      "values": 21973492
+      "value": 21973492
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.parietal.postcentral",
-      "values": 955891479
+      "value": 955891479
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.frontal.precentral",
-      "values": 92832205
+      "value": 92832205
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.parietal.precuneus",
-      "values": 2632595
+      "value": 2632595
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 2515770
+      "value": 2515770
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 2416464
+      "value": 2416464
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.parietal.superiorparietal",
-      "values": 25636643
+      "value": 25636643
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.temporal.superiortemporal",
-      "values": 3381847
+      "value": 3381847
     },
     {
       "target": "cortex.parietal.postcentral",
       "source": "cortex.parietal.supramarginal",
-      "values": 55861893
+      "value": 55861893
     },
     {
       "target": "cortex.cingulate.posteriorcingulate",
       "source": "cortex.cingulate.caudalanteriorcingulate",
-      "values": 80961107
+      "value": 80961107
     },
     {
       "target": "cortex.cingulate.posteriorcingulate",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 37266450
+      "value": 37266450
     },
     {
       "target": "cortex.cingulate.posteriorcingulate",
       "source": "cortex.frontal.paracentral",
-      "values": 27397257
+      "value": 27397257
     },
     {
       "target": "cortex.cingulate.posteriorcingulate",
       "source": "cortex.cingulate.posteriorcingulate",
-      "values": 921796109
+      "value": 921796109
     },
     {
       "target": "cortex.cingulate.posteriorcingulate",
       "source": "cortex.parietal.precuneus",
-      "values": 26478335
+      "value": 26478335
     },
     {
       "target": "cortex.cingulate.posteriorcingulate",
       "source": "cortex.cingulate.rostralanteriorcingulate",
-      "values": 29174203
+      "value": 29174203
     },
     {
       "target": "cortex.cingulate.posteriorcingulate",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 11361171
+      "value": 11361171
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.frontal.caudalmiddlefrontal",
-      "values": 89687512
+      "value": 89687512
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 19926355
+      "value": 19926355
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.insula.insula",
-      "values": 3852866
+      "value": 3852866
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.frontal.paracentral",
-      "values": 69029246
+      "value": 69029246
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.frontal.parsopercularis",
-      "values": 68301623
+      "value": 68301623
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.parietal.postcentral",
-      "values": 100921481
+      "value": 100921481
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.frontal.precentral",
-      "values": 1379897581
+      "value": 1379897581
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 15518896
+      "value": 15518896
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 43544490
+      "value": 43544490
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.parietal.superiorparietal",
-      "values": 6182887
+      "value": 6182887
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.temporal.superiortemporal",
-      "values": 3008806
+      "value": 3008806
     },
     {
       "target": "cortex.frontal.precentral",
       "source": "cortex.parietal.supramarginal",
-      "values": 19021053
+      "value": 19021053
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.cingulate.caudalanteriorcingulate",
-      "values": 42635807
+      "value": 42635807
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.occipital.cuneus",
-      "values": 35854894
+      "value": 35854894
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.temporal.entorhinal",
-      "values": 22226178
+      "value": 22226178
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 71495513
+      "value": 71495513
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.occipital.lingual",
-      "values": 17692738
+      "value": 17692738
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.frontal.paracentral",
-      "values": 34974897
+      "value": 34974897
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.temporal.parahippocampal",
-      "values": 12795636
+      "value": 12795636
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.occipital.pericalcarine",
-      "values": 9990923
+      "value": 9990923
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.parietal.postcentral",
-      "values": 2836773
+      "value": 2836773
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.cingulate.posteriorcingulate",
-      "values": 56139276
+      "value": 56139276
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.parietal.precuneus",
-      "values": 1034006258
+      "value": 1034006258
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.cingulate.rostralanteriorcingulate",
-      "values": 22243934
+      "value": 22243934
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 13136371
+      "value": 13136371
     },
     {
       "target": "cortex.parietal.precuneus",
       "source": "cortex.parietal.superiorparietal",
-      "values": 56556050
+      "value": 56556050
     },
     {
       "target": "cortex.cingulate.rostralanteriorcingulate",
       "source": "cortex.cingulate.caudalanteriorcingulate",
-      "values": 45782668
+      "value": 45782668
     },
     {
       "target": "cortex.cingulate.rostralanteriorcingulate",
       "source": "cortex.insula.insula",
-      "values": 2398888
+      "value": 2398888
     },
     {
       "target": "cortex.cingulate.rostralanteriorcingulate",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 4897871
+      "value": 4897871
     },
     {
       "target": "cortex.cingulate.rostralanteriorcingulate",
       "source": "cortex.frontal.medialorbitofrontal",
-      "values": 17047207
+      "value": 17047207
     },
     {
       "target": "cortex.cingulate.rostralanteriorcingulate",
       "source": "cortex.cingulate.posteriorcingulate",
-      "values": 12611035
+      "value": 12611035
     },
     {
       "target": "cortex.cingulate.rostralanteriorcingulate",
       "source": "cortex.parietal.precuneus",
-      "values": 4535102
+      "value": 4535102
     },
     {
       "target": "cortex.cingulate.rostralanteriorcingulate",
       "source": "cortex.cingulate.rostralanteriorcingulate",
-      "values": 957760318
+      "value": 957760318
     },
     {
       "target": "cortex.cingulate.rostralanteriorcingulate",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 7592910
+      "value": 7592910
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.frontal.caudalmiddlefrontal",
-      "values": 67417596
+      "value": 67417596
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.frontal.frontalpole",
-      "values": 47596689
+      "value": 47596689
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 6187859
+      "value": 6187859
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.insula.insula",
-      "values": 10585351
+      "value": 10585351
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 4337868
+      "value": 4337868
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 11674057
+      "value": 11674057
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.occipital.lingual",
-      "values": 11022352
+      "value": 11022352
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.temporal.middletemporal",
-      "values": 4479261
+      "value": 4479261
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.frontal.parsopercularis",
-      "values": 37995774
+      "value": 37995774
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.frontal.parsorbitalis",
-      "values": 45909436
+      "value": 45909436
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.frontal.parstriangularis",
-      "values": 57186935
+      "value": 57186935
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.parietal.postcentral",
-      "values": 2683138
+      "value": 2683138
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.frontal.precentral",
-      "values": 15224658
+      "value": 15224658
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 958368875
+      "value": 958368875
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 56180327
+      "value": 56180327
     },
     {
       "target": "cortex.frontal.rostralmiddlefrontal",
       "source": "cortex.parietal.superiorparietal",
-      "values": 2611148
+      "value": 2611148
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.cingulate.caudalanteriorcingulate",
-      "values": 48244768
+      "value": 48244768
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.frontal.caudalmiddlefrontal",
-      "values": 59728491
+      "value": 59728491
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.frontal.frontalpole",
-      "values": 26223471
+      "value": 26223471
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.insula.insula",
-      "values": 7731138
+      "value": 7731138
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 7153644
+      "value": 7153644
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.frontal.medialorbitofrontal",
-      "values": 18512554
+      "value": 18512554
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.frontal.paracentral",
-      "values": 39967417
+      "value": 39967417
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.frontal.parsopercularis",
-      "values": 44732883
+      "value": 44732883
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.frontal.parstriangularis",
-      "values": 8610916
+      "value": 8610916
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.parietal.postcentral",
-      "values": 2736086
+      "value": 2736086
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.cingulate.posteriorcingulate",
-      "values": 25310953
+      "value": 25310953
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.frontal.precentral",
-      "values": 45352128
+      "value": 45352128
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.parietal.precuneus",
-      "values": 13803350
+      "value": 13803350
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.cingulate.rostralanteriorcingulate",
-      "values": 39132894
+      "value": 39132894
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 59643340
+      "value": 59643340
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 1074903073
+      "value": 1074903073
     },
     {
       "target": "cortex.frontal.superiorfrontal",
       "source": "cortex.parietal.superiorparietal",
-      "values": 1822905
+      "value": 1822905
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.occipital.cuneus",
-      "values": 47078287
+      "value": 47078287
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.temporal.fusiform",
-      "values": 13612685
+      "value": 13612685
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 85555968
+      "value": 85555968
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.temporal.inferiortemporal",
-      "values": 5387747
+      "value": 5387747
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.insula.insula",
-      "values": 21714949
+      "value": 21714949
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.cingulate.isthmuscingulate",
-      "values": 12773465
+      "value": 12773465
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 24454655
+      "value": 24454655
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 2659242
+      "value": 2659242
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.occipital.lingual",
-      "values": 10403043
+      "value": 10403043
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.frontal.paracentral",
-      "values": 7165690
+      "value": 7165690
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.temporal.parahippocampal",
-      "values": 6439040
+      "value": 6439040
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.frontal.parsorbitalis",
-      "values": 12188543
+      "value": 12188543
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.frontal.parstriangularis",
-      "values": 10957193
+      "value": 10957193
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.occipital.pericalcarine",
-      "values": 14506180
+      "value": 14506180
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.parietal.postcentral",
-      "values": 45111610
+      "value": 45111610
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.frontal.precentral",
-      "values": 10007685
+      "value": 10007685
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.parietal.precuneus",
-      "values": 92356198
+      "value": 92356198
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.frontal.rostralmiddlefrontal",
-      "values": 4308117
+      "value": 4308117
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.frontal.superiorfrontal",
-      "values": 2832971
+      "value": 2832971
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.parietal.superiorparietal",
-      "values": 1033991019
+      "value": 1033991019
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.temporal.superiortemporal",
-      "values": 19897896
+      "value": 19897896
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.parietal.supramarginal",
-      "values": 41856866
+      "value": 41856866
     },
     {
       "target": "cortex.parietal.superiorparietal",
       "source": "cortex.temporal.transversetemporal",
-      "values": 26926840
+      "value": 26926840
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.temporal.bankssts",
-      "values": 63873840
+      "value": 63873840
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 10328430
+      "value": 10328430
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.insula.insula",
-      "values": 23814539
+      "value": 23814539
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 9619166
+      "value": 9619166
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.frontal.medialorbitofrontal",
-      "values": 7724201
+      "value": 7724201
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.temporal.middletemporal",
-      "values": 39551753
+      "value": 39551753
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.parietal.postcentral",
-      "values": 2126434
+      "value": 2126434
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.frontal.precentral",
-      "values": 1740234
+      "value": 1740234
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.parietal.superiorparietal",
-      "values": 7110135
+      "value": 7110135
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.temporal.superiortemporal",
-      "values": 1060029095
+      "value": 1060029095
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.parietal.supramarginal",
-      "values": 31793058
+      "value": 31793058
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.temporal.temporalpole",
-      "values": 33253752
+      "value": 33253752
     },
     {
       "target": "cortex.temporal.superiortemporal",
       "source": "cortex.temporal.transversetemporal",
-      "values": 167227804
+      "value": 167227804
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.temporal.bankssts",
-      "values": 46930691
+      "value": 46930691
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.parietal.inferiorparietal",
-      "values": 38693898
+      "value": 38693898
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.insula.insula",
-      "values": 8936898
+      "value": 8936898
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.temporal.middletemporal",
-      "values": 34816872
+      "value": 34816872
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.frontal.parsopercularis",
-      "values": 16244633
+      "value": 16244633
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.frontal.parstriangularis",
-      "values": 6877857
+      "value": 6877857
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.parietal.postcentral",
-      "values": 38271705
+      "value": 38271705
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.frontal.precentral",
-      "values": 11987032
+      "value": 11987032
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.parietal.superiorparietal",
-      "values": 16296775
+      "value": 16296775
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.temporal.superiortemporal",
-      "values": 34641490
+      "value": 34641490
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.parietal.supramarginal",
-      "values": 1272028045
+      "value": 1272028045
     },
     {
       "target": "cortex.parietal.supramarginal",
       "source": "cortex.temporal.transversetemporal",
-      "values": 29770389
+      "value": 29770389
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.temporal.entorhinal",
-      "values": 47467614
+      "value": 47467614
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.temporal.fusiform",
-      "values": 12306116
+      "value": 12306116
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.temporal.inferiortemporal",
-      "values": 18275131
+      "value": 18275131
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.insula.insula",
-      "values": 39067463
+      "value": 39067463
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.occipital.lateraloccipital",
-      "values": 1492212
+      "value": 1492212
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.frontal.lateralorbitofrontal",
-      "values": 20382074
+      "value": 20382074
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.frontal.medialorbitofrontal",
-      "values": 20138667
+      "value": 20138667
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.temporal.middletemporal",
-      "values": 14974580
+      "value": 14974580
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.temporal.parahippocampal",
-      "values": 6880487
+      "value": 6880487
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.temporal.superiortemporal",
-      "values": 17836444
+      "value": 17836444
     },
     {
       "target": "cortex.temporal.temporalpole",
       "source": "cortex.temporal.temporalpole",
-      "values": 1498904746
+      "value": 1498904746
     },
     {
       "target": "cortex.temporal.transversetemporal",
       "source": "cortex.insula.insula",
-      "values": 4568550
+      "value": 4568550
     },
     {
       "target": "cortex.temporal.transversetemporal",
       "source": "cortex.parietal.superiorparietal",
-      "values": 1853494
+      "value": 1853494
     },
     {
       "target": "cortex.temporal.transversetemporal",
       "source": "cortex.temporal.superiortemporal",
-      "values": 32213904
+      "value": 32213904
     },
     {
       "target": "cortex.temporal.transversetemporal",
       "source": "cortex.parietal.supramarginal",
-      "values": 5263263
+      "value": 5263263
     },
     {
       "target": "cortex.temporal.transversetemporal",
       "source": "cortex.temporal.transversetemporal",
-      "values": 1067466820
+      "value": 1067466820
     }
   ]
 }

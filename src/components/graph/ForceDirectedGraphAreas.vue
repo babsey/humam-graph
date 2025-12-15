@@ -5,16 +5,18 @@
 <script setup lang="ts">
 // https://observablehq.com/@d3/force-directed-graph/2
 import * as d3 from 'd3'
-import { onMounted, ref, watch } from 'vue'
+import { onMounted, ref } from 'vue'
 
 import { lobeColor } from '@/helpers/theme'
-import { abbreviation, description, nameMapping } from '@/helpers/parcellation'
-
-const props = defineProps<{ nodes: any[]; links: any[] }>()
-// The force simulation mutates links and nodes, so create a copy
-// so that re-evaluating this cell produces the same result.
-const nodes = ref([])
-const links = ref([])
+import {
+  abbreviation,
+  description,
+  getArea,
+  getLobe,
+  type ILink,
+  type INode,
+} from '@/helpers/parcellation'
+import { state } from '@/state'
 
 const svg = ref(null)
 
@@ -22,10 +24,14 @@ const svg = ref(null)
 const width = 1280
 const height = 920
 
-const selectedArea = ref(null)
 const selectedNodes = ref([])
+const keyCode = ref(null)
 
-function linkArc(d) {
+d3.select('body')
+  .on('keydown', (e) => (keyCode.value = e.keyCode))
+  .on('keyup', () => (keyCode.value = null))
+
+function linkArc(d: ILink) {
   const r = Math.hypot(d.target.x - d.source.x, d.target.y - d.source.y)
   return `
     M${d.source.x},${d.source.y}
@@ -33,47 +39,48 @@ function linkArc(d) {
   `
 }
 
-const getLinkOpacity = (link) => {
-  if (selectedNodes.value.length > 0)
-    return selectedNodes.value.includes(link.source.name) ? 1 : 0.1
+const getLinkOpacity = (link: ILink) => {
+  if (selectedNodes.value.length > 0) return selectedNodes.value.includes(link.source.id) ? 1 : 0.1
 
-  return link.source.lobe == link.target.lobe ? 1 : 0.1
+  return getLobe(link.source.id) == getLobe(link.target.id) ? 1 : 0.1
 }
 
-const getNodeTextColor = (node) => {
-  return selectedNodes.value.length > 0 && selectedNodes.value.includes(node.name)
+const getNodeTextColor = (node: INode) => {
+  return selectedNodes.value.length > 0 && selectedNodes.value.includes(node.id)
     ? 'var(--color-text)'
     : 'var(--color-background)'
 }
 
-const toggleSelection = (nodeId) => {
+const toggleSelection = (nodeId: string) => {
   if (selectedNodes.value.includes(nodeId)) {
     selectedNodes.value.splice(selectedNodes.value.indexOf(nodeId), 1)
   } else {
-    selectedArea.value = nodeId
-    selectedNodes.value.push(nodeId)
+    if (keyCode.value === 17) {
+      selectedNodes.value.push(nodeId)
+    } else {
+      selectedNodes.value = [nodeId]
+    }
   }
 }
 
-const update = () => {
-  nodes.value = props.nodes.map((d) => ({ ...d, ...nameMapping(d.name) }))
-  links.value = props.links.map((d) => ({ ...d }))
-
-  console.log(nodes, links)
+const render = () => {
+  const nodeValueMax = d3.max(state.nodes, (d: INode) => d.value) ?? 50
+  const linkValueMax = d3.max(state.links, (d: ILink) => d.value) ?? 100
 
   d3.select('.network').selectAll('g').remove()
 
   // Create a simulation with several forces.
   const simulation = d3
-    .forceSimulation(nodes.value)
+    .forceSimulation(state.nodes)
     .force(
       'link',
       d3
-        .forceLink(links.value)
-        .id((d) => d.id)
-        .strength((d) => (d.source.parent == d.target.parent ? 1 : 0.1)),
+        .forceLink(state.links)
+        .id((d: ILink) => d.id)
+        .strength((d: ILink) => (d.value / linkValueMax) * 100),
+      // .strength((d) => (d.source.parent == d.target.parent ? 1 : 0.1)),
     )
-    .force('charge', d3.forceManyBody().strength(-3000))
+    .force('charge', d3.forceManyBody().strength(-10000))
     .force('center', d3.forceCenter(width / 2, height / 2))
     .on('tick', ticked)
 
@@ -85,26 +92,26 @@ const update = () => {
     .attr('stroke', 'currentcolor')
     .attr('stroke-width', 3.5)
     .selectAll('path')
-    .data(links.value)
+    .data(state.links)
     .join('path')
-    .style('color', (d) => lobeColor(d.source.id))
+    .style('color', (d: ILink) => lobeColor(d.source.id))
     .attr('marker-end', () => `url(${new URL(`#arrow-E`, location)})`)
 
   const node = d3
     .select('.network')
     .append('g')
     .selectAll()
-    .data(nodes.value)
+    .data(state.nodes)
     .join('g')
-    .attr('color', (d) => d.color ?? lobeColor(d.id))
+    .attr('color', (d: INode) => d.color ?? lobeColor(d.id))
 
   node
     .append('circle')
-    .attr('r', 25) // d.value / 2)
-    .on('click', (_, d) => toggleSelection(d.name))
+    .attr('r', (d: INode) => (d.value / nodeValueMax) * 50)
+    .on('click', (_, d: INode) => toggleSelection(d.id))
     .attr('fill', 'currentcolor')
     .append('title')
-    .text((d) => description(d.area))
+    .text((d: INode) => description(getArea(d.id)))
 
   node
     .append('text')
@@ -112,37 +119,37 @@ const update = () => {
     .style('text-anchor', 'middle')
     .style('pointer-events', 'none')
     .attr('transform', 'translate(0, 5)')
-    .text((d) => abbreviation(d.area))
+    .text((d: INode) => abbreviation(getArea(d.id)))
 
   // Add a drag behavior.
   node.call(d3.drag().on('start', dragstarted).on('drag', dragged).on('end', dragended))
 
   // Set the position attributes of links and nodes each time the simulation ticks.
   function ticked() {
-    link.attr('d', linkArc).style('opacity', (d) => getLinkOpacity(d))
+    link.attr('d', linkArc).style('opacity', (d: ILink) => getLinkOpacity(d))
 
     node
-      .attr('transform', (d) => `translate(${d.x},${d.y})`)
+      .attr('transform', (d: INode) => `translate(${d.x},${d.y})`)
       .selectAll('text')
-      .attr('stroke', (d) => getNodeTextColor(d))
+      .attr('stroke', (d: INode) => getNodeTextColor(d))
   }
 
   // Reheat the simulation when drag starts, and fix the subject position.
-  function dragstarted(event) {
+  function dragstarted(event: MouseEvent) {
     if (!event.active) simulation.alphaTarget(0.3).restart()
     event.subject.fx = event.subject.x
     event.subject.fy = event.subject.y
   }
 
   // Update the subject (dragged node) position during drag.
-  function dragged(event) {
+  function dragged(event: MouseEvent) {
     event.subject.fx = event.x
     event.subject.fy = event.y
   }
 
   // Restore the target alpha so the simulation cools after dragging ends.
   // Unfix the subject position now that it’s no longer being dragged.
-  function dragended(event) {
+  function dragended(event: MouseEvent) {
     if (!event.active) simulation.alphaTarget(0)
     event.subject.fx = null
     event.subject.fy = null
@@ -162,7 +169,7 @@ onMounted(() => {
     .selectAll('marker')
     .data(['E'])
     .join('marker')
-    .attr('id', (d) => `arrow-${d}`)
+    .attr('id', (d: string) => `arrow-${d}`)
     .attr('viewBox', '0 -5 10 10')
     .attr('refX', 15)
     .attr('refY', -0.5)
@@ -175,13 +182,8 @@ onMounted(() => {
 
   d3.select(svg.value).append('g').attr('class', 'network')
 
-  update()
+  render()
 })
 
-watch(
-  () => [props.nodes, props.links],
-  () => {
-    update()
-  },
-)
+// watch(() => [state.nodes, state.links], render)
 </script>
